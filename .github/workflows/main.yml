@@ -31,6 +31,7 @@ jobs:
         node-version: 12
     - name: Install Surge
       run: npm install -g surge
-    - name: Run ./ muhammadali.surge.sh --token${{secrets.SURGE_TOKEN}}
+    - name: Run Surge
+      run: surge ./ muhammadali.surge.sh --token${{secrets.SURGE_TOKEN}}
 
     
